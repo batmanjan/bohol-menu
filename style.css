@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(#fff1eb, #ace0f9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card, .question, .result {
+  width: 330px;
+  background: white;
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.food-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 80px;
+  justify-content: flex-start; /* default: side by side */
+  align-items: center;
+  gap: 10px;            /* space between buttons */
+  transition: justify-content 0.3s ease; /* smooth center transition */
+  
+}
+
+.card button {
+  width: 100%;
+  background: #ff6b6b;
+  color: white;
+  margin-top: 15px;
+  
+}
+
+.question, .result {
+  display: none;
+}
+
+.buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 80px;
+}
+
+.yes {
+  background: #4caf50;
+  color: white;
+  width: 120px;
+}
+.no {
+  background: #ccc;
+  width: 120px;
+}
+
+.result img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.no {
+  transition: left 0.25s ease, top 0.25s ease;
+}
